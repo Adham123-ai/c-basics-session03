@@ -169,27 +169,46 @@ namespace c_basics_session03
             //Using the same books array, loop through it and print each title, but stop completely(break) once
             //you reach "Refactoring".
 
-           /// foreach (string book in books)
+            /// foreach (string book in books)
             ///{
-               /// if (book == "Refactoring")
-              ///  {
-               ///     break;
-               /// }
+            /// if (book == "Refactoring")
+            ///  {
+            ///     break;
+            /// }
 
-               /// Console.WriteLine(book);
+            /// Console.WriteLine(book);
             ///}
 
             #endregion
             #region Q17
-            foreach (string book in books)
+          //  Using the same books array, print every title except "The Pragmatic Programmer"(skip it with
+             //continue, don't stop the loop).
+
+           /// foreach (string book in books)
+           /// {
+           ///   if (book == "The Pragmatic Programmer")
+           ///  {
+           ///   continue;
+           /// }
+
+           ///  Console.WriteLine(book);
+           /// }
+            #endregion
+            #region Q18
+            //Write a method PrintFirstBook() that prints the first book in the books array.If the array is empty,
+            //use return to exit the method early instead of printing anything.
+            void PrintFirstBook()
             {
-                if (book == "The Pragmatic Programmer")
+                if (books.Length == 0)
                 {
-                    continue;
+                    return;
                 }
 
-                Console.WriteLine(book);
+                Console.WriteLine(books[0]);
             }
+
+            PrintFirstBook();
+
             #endregion
         }
     }   
