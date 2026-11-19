@@ -57,8 +57,11 @@ namespace c_basics_session03
             #endregion
             #region Q6
             //  Build the same sentence as above, but using string interpolation ($"...").
-            Console.WriteLine($"Book:{title} pages:{pages}");
+            ///Console.WriteLine($"Book:{title} pages:{pages}");
 
+            #endregion
+            #region Q7
+            Console.WriteLine("Book:{0}pages{1}",title,pages);
             #endregion
 
 
