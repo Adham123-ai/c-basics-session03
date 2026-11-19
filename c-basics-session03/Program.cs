@@ -49,8 +49,8 @@ namespace c_basics_session03
             #region Q5
             /// Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
             ///Pages: 464" using the + operator.
-            string title = "Clean Code";
-            int pages = 464;
+            ///string title = "Clean Code";
+            ///int pages = 464;
             ///Console.WriteLine("Book:" + title +"Pages"+pages);
 
 
@@ -61,7 +61,22 @@ namespace c_basics_session03
 
             #endregion
             #region Q7
-            Console.WriteLine("Book:{0}pages{1}",title,pages);
+            /// Console.WriteLine("Book:{0}pages{1}",title,pages);
+            #endregion
+            #region Q8
+            ///Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            ///300, otherwise prints "Short Book".
+            int pages = 464;
+            if (pages >= 300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+                Console.WriteLine("Short Book");
+            }
+
+
             #endregion
 
 
