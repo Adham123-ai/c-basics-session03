@@ -129,13 +129,11 @@ namespace c_basics_session03
             //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
             //to print each book with its position number, like 1.Clean Code.
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            ///string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             ///for (int i = 0; i < books.Length; i++)
             ///{
             /// Console.WriteLine($"{i+1}{books[i]}");
             /// }
             #endregion
-
             #region Q13
             //Using the same books array, use a while loop to print every book title.
             /// int i = 0;
@@ -161,8 +159,23 @@ namespace c_basics_session03
             #endregion
             #region Q15  
             //Using the same books array, use a foreach loop to print every book title
+            //foreach (string book in books)
+            //{
+            //   Console.WriteLine(book);
+            //}
+
+            #endregion
+            #region Q16
+            //Using the same books array, loop through it and print each title, but stop completely(break) once
+            //you reach "Refactoring".
+
             foreach (string book in books)
             {
+                if (book == "Refactoring")
+                {
+                    break;
+                }
+
                 Console.WriteLine(book);
             }
 
