@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace c_basics_session03
@@ -26,10 +27,10 @@ namespace c_basics_session03
 
             #endregion
             #region Q3
-            //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
-            //object.Print the final result.
+            ///Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            ///object.Print the final result.
 
-            StringBuilder book = new StringBuilder();
+             StringBuilder book = new StringBuilder();
 
             book.Append("Book List");
 
@@ -38,6 +39,13 @@ namespace c_basics_session03
             Console.WriteLine(book);
 
 
+            #endregion
+
+            #region Q4
+          //  Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+          //Print the result.
+            book.Replace("Book List","Library");
+            Console.WriteLine(book);
             #endregion
 
 
